@@ -1,5 +1,11 @@
 <form>
-    <input type="text" placeholder="login"/> <br />
-    <input type="password" placeholder="password"/> <br />
-    <input type="button" value="Sing in" />
+    <input type="text" placeholder="login" name="login" [{ngmodel}]="loginData.login" />
+
+    <br />
+
+    <input type="password" placeholder="password" name="password" [{ngmodel}]="loginData.password">
+
+    <br />
+
+    <input type="button" value="Sing in" (click)="singIn()" />
 </form>
